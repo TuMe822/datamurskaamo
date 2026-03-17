@@ -1,26 +1,32 @@
 # Datamurskaamo
 
-Paikallisesti toimiva tekoälypohjainen dokumenttianalyysityökalu, joka lukee PDF-tiedostoja, poimii niistä sisältöä ja tuottaa kysymyksiin perustuvia vastauksia ja tiivistelmiä.
+Datamurskaamo is a local-first AI-powered document analysis tool designed to process PDF files, extract meaningful information, and enable intelligent querying of document content.
 
-## Tavoite
-Projektin tavoitteena on rakentaa local-first AI-työkalu, jossa dokumenttidata pysyy omalla koneella eikä siirry pilvipalveluihin.
+## Project Goal
+The goal of this project is to build a fully local AI pipeline where sensitive data never leaves the user’s machine. The system will allow users to upload documents and receive summaries, insights, and answers to questions based on the content.
 
-## Nykyinen tila
-- WSL + Ubuntu kehitysympäristö rakennettu
-- Neovim + Copilot + Telescope + LSP käyttöön
-- Git ja GitHub-repo alustettu
-- Python-virtuaaliympäristö luotu
-- PDF-luku testattu
+## Current Status
+- Development environment (WSL + Ubuntu) configured
+- Neovim-based development setup completed
+- Git and GitHub version control initialized
+- Python virtual environment created
+- Basic PDF reading implemented using `pypdf`
 
-## Teknologiat
+## Planned Features
+- PDF text extraction and preprocessing
+- Text chunking for efficient processing
+- Embedding generation (vector representations)
+- Vector database integration (FAISS)
+- Local LLM-based question answering
+- Interactive CLI or web interface
+
+## Tech Stack
 - Python
 - pypdf
-- Git / GitHub
+- sentence-transformers (planned)
+- FAISS (planned)
+- Ollama / local LLM (planned)
+- Git & GitHub
 - Neovim
-- WSL2
 
-## Seuraavat askeleet
-- PDF-tekstin pilkkominen
-- embeddingit
-- vektorihaku
-- paikallinen LLM-vastaus
+## Project Structure
